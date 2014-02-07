@@ -1,0 +1,27 @@
+@mixin bg-size($size: 100% auto) {     -webkit-background-size: $size;
+-moz-background-size: $size;     background-size: $size; }
+
+@mixin arrow-up($color:black, $thickness:6px) {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-color: transparent transparent $color transparent;
+    border-style: solid;
+    border-width: $thickness;
+}
+
+$break-small: 400px;
+$break-large: 800px;
+
+@mixin respond-to($media) {
+    @if $media == handheld {
+        @media only screen and (max-width: $break-small) { @content; }
+    }
+    @else if $media == tablet {
+        @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+    }
+    @else if $media == desktop {
+        @media only screen and (min-width: $break-large) { @content; }
+    }
+}

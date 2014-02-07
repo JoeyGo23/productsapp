@@ -1,0 +1,53 @@
+<html>
+<head>
+</head>
+
+<body>
+
+<h1 class="header">Week 5 Project app</h1>
+<div class="grid-container">
+
+  <div class="product-container">
+  
+  	<div class="product-title">
+  		Product-Title
+  	</div>
+  	
+  	<div class="image-container">
+  		 <%= image_tag("cthulhu.jpg",  size: "100x100" , alt: "cthulhu", :class => 'product-image') %>
+ 	</div>	
+ 	<div class="product-price">
+ 		$ 499.99
+ 	</div>
+ </div>
+
+ <div class="product-container">
+  	<div class="product-title">
+  		Product-Title
+  	</div>
+  	
+  	<div class="image-container">
+  		 <%= image_tag("baconnaise.jpg",  size: "100x100" , alt: "cthulhu", :class => 'product-image') %>
+  	</div>
+  	<div class="product-price">
+ 		$ 499.99
+ 	</div>	
+  
+ </div>
+
+ <div class="product-container">
+  	<div class="product-title">
+  		Product-Title
+  	</div>
+  	
+  	<div class="image-container">
+  		 <%= image_tag("bigfoot-sweater.jpg",  size: "100x100" , alt: "cthulhu", :class => 'product-image') %>
+  	</div>
+  	<div class="product-price">
+ 		$ 499.99
+ 	</div>	
+ </div>
+
+</div>
+</body>
+</html>

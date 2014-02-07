@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+
+<body>
+
+<h1 class="header">Week 5 Project app</h1>
+<div class="grid-container">
+
+ <% @products.each do |product| %>
+	  <div class="product-container">
+	  
+	  	<div class="product-title">
+	  		<%= product.name %>
+	  	</div>
+	  	
+	  	<div class="image-container">
+	  		 <%= image_tag( product.picture ,  size: "100x100" , alt: "cthulhu", :class => 'product-image') %>
+	 	  </div>	
+	 	
+	    <div class="product-price">
+	 		$ 499.99
+	  	</div>
+	 </div>
+<% end %>
+
+</div>
+</body>
+</html>
