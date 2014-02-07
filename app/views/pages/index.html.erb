@@ -17,11 +17,11 @@
 	  	</div>
 	  	
 	  	<div class="image-container">
-	  		 <%= image_tag( product.picture ,  size: "100x100" , alt: "cthulhu", :class => 'product-image') %>
+	  		 <%= image_tag( product.picture ,  size: "100x100" , alt: product.name, :class => 'product-image') %>
 	 	  </div>	
 	 	
 	    <div class="product-price">
-	 		$ 499.99
+	 		<%= "$ " + product.cost.to_s %>
 	  	</div>
 	 </div>
 <% end %>
