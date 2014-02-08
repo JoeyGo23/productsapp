@@ -1,5 +1,6 @@
 @import 'library';
 @import 'reset';
+@import 'font-awesome';
 
 @mixin oval-shadow{
 	height: 25px;
@@ -28,14 +29,17 @@ body{
 	}
 
 	.cart-droppable-area{
-		height: 350px;
+		height: 400px;
 		border-bottom: 5px solid orange;
 		border-radius: 10px;
+		background-color: darkgrey;
 		
 		.cart-icon{	
-		color: red;
-		font-size: 100px;
+		color: black;
+		font-size: 50px;
+		width: 100%;
 		text-align: center;
+		border: 2px solid green;
 		}
 	}
 

@@ -7,12 +7,13 @@
 <h1 class="header">Week 5 Product app</h1>
 
 <div class="cart-droppable-area">
-	<i class="cart-icon fa fa-shopping-cart"> Shopping Cart</i>
+	<i class="cart-icon fa fa-shopping-cart fa-5x">Shopping Cart</i>
+	drag items here to add to cart
 </div>
 
 <div class="grid-container">
 	
-<% @products.each do |product| %>
+	<% @products.each do |product| %>
 
 	  <div class="product-container">
 	  
@@ -28,7 +29,7 @@
 	 		<%= "$ " + product.cost.to_s %>
 	  	</div>
 	 </div>
-<% end %>
+	<% end %>
 </div>
 </body>
 </html>
