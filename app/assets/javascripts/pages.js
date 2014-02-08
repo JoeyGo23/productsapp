@@ -10,7 +10,7 @@ $(document).ready(function(){
         tolerance: "touch",
         drop: function( event, ui ) {
             var productObj = $(this).find('div');
-            listObj.append(ui.draggable.clone());
+            productObj.append(div.draggable.clone());
         }
     });
 
