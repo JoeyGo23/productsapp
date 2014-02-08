@@ -7,7 +7,19 @@
 <h1 class="header">Week 5 Project app</h1>
 
 <div class="nav-buttons">
-	
+	<ul class="tabrow">
+		<li class="selected">
+			<a href="#" class="cart-button" id="cart-button">
+				Cart
+			</a>
+			
+		</li>
+		<li>
+			<a href="#" class="description-button" id="description-button">
+				Product Details
+			</a>
+		</li>
+	</ul>
 </div>
 
 <div class="grid-container">
