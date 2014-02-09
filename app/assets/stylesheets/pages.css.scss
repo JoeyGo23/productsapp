@@ -96,6 +96,23 @@ body{
 				@include oval-shadow;	
 			}	
 
+			.product-buttons{
+				border: 2px solid white;
+				position: relative;
+				width: 100%;
+				height: 100%;
+				margin-top: 10px;
+
+				.add-to-cart{
+					background-color: orange;
+					padding: 5px 10px;		
+				}
+
+				.product-details{
+					background-color: orange;
+					padding: 5px 10px;	
+				}
+			}
 		}
 	}
 }

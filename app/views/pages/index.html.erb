@@ -23,13 +23,31 @@
 	  	
 	  	<div class="image-container">
 	  		 <%= image_tag( product.picture ,  size: "100x100" , alt: product.name, :class => 'product-image') %>
-	 	  </div>	
+	 	</div>	
 	 	
 	    <div class="product-price">
 	 		<%= "$ " + product.cost.to_s %>
 	  	</div>
-	 </div>
+
+	  	<div class="product-buttons">
+		  	<!-- Add to Cart Button -->
+			<ul>
+				<li class="add-to-cart">
+					Add to Cart
+				</li>	
+
+			  	<!-- Product Details -->
+				<li class="product-details">
+					Product Details
+				</li>
+			</ul>
+	  	</div>
+	  
+	  </div>
 	<% end %>
+	
+
 </div>
+
 </body>
 </html>
