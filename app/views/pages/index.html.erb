@@ -9,6 +9,14 @@
 <div class="cart-droppable-area">
 	<i class="cart-icon fa fa-shopping-cart fa-5x">Shopping Cart</i>
 	drag items here to add to cart
+	<div class="cart-table">
+	  <table>
+			<th>Product Name</th><th>Product Name</th>
+			<tr><td></td></tr>
+			<tr><td>Product Image Small</td></tr>
+			<tr><td>Cccccc</td></tr>
+	  </table>
+	</div>
 </div>
 
 <div class="grid-container">
@@ -18,6 +26,7 @@
 	  <div class="product-container" draggable="true" >
 	  
 	  	<div class="product-title">
+	  		<i class="fa fa-scissors"></i>
 	  		<%= product.name %>
 	  	</div>
 	  	
@@ -34,13 +43,13 @@
 			<ul>
 				<li class="add-to-cart">
 					<i class="fa fa-plus"></i>
-					Add to Cart
+					<a href=""> Add to Cart </a>
 				</li>	
 
 			  	<!-- Product Details -->
 				<li class="product-details">
 					<i class="fa fa-info-circle"></i>
-					Product Details
+					<a href="#"> Product Details </a>
 				</li>
 			</ul>
 	  	</div>
