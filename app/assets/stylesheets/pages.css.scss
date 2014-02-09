@@ -48,9 +48,11 @@ body{
 			height: 90%;
 			
 		table, th, td{
+			width: 100%;
 			border: 1px solid black;
 			padding: 3px 3px;
 			text-align: center;
+			vertical-align: middle;
 		}	
 
 		}
