@@ -142,6 +142,10 @@ body{
 					&:hover{
 						background-color: darkorange;
 					}
+
+					&:active{
+						color: white;
+					}
 				}
 
 				.add-to-cart{
@@ -168,6 +172,10 @@ body{
 					  	color: white;
 					  }
 					}
+				}
+
+				.show-details{
+					text-align: center;
 				}
 			}
 		}

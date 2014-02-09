@@ -1,6 +1,7 @@
 $(document).ready(function(){
-	console.log("Jscript Lima Charlie");
-	 $( ".product-container" ).draggable({
+	// console.log("Jscript Lima Charlie");
+	
+	$( ".product-container" ).draggable({
         helper: "clone"
     });
 
@@ -14,4 +15,7 @@ $(document).ready(function(){
         }
     });
 
+    $('.product-details').click(function() {
+        $(this).addClass('');
+    });
 });

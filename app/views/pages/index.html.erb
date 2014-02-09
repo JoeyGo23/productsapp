@@ -43,7 +43,7 @@
 	 	</div>	
 	 	
 	    <div class="product-price">
-	 		<%= "$ " + product.cost.to_s %>
+	 		<%= number_to_currency(product.cost) %>
 	  	</div>
 
 	  	<div class="product-buttons">
@@ -56,6 +56,11 @@
 			  	<!-- Product Details -->
 				<li class="product-details">
 					<a href="#"> <i class="fa fa-info-circle"></i>Product Details </a>
+				</li>
+
+				<!-- Show Product Details -->
+				<li class="show-details">
+					<%= product.description %>
 				</li>
 			</ul>
 	  	</div>
