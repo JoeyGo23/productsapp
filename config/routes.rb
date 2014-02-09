@@ -1,4 +1,6 @@
 Productsapp::Application.routes.draw do
+  resources :carts
+
   resources :products
 
   root 'pages#index'

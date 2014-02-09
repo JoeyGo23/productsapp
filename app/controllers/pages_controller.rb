@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @products = Product.order(:cost)
   end
 
   # GET /products/1

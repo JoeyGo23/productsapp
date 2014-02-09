@@ -138,6 +138,10 @@ body{
 				a{
 					text-decoration: none;
 					color: black;
+
+					&:hover{
+						background-color: darkorange;
+					}
 				}
 
 				.add-to-cart{
@@ -156,7 +160,8 @@ body{
 				.product-details{
 					background-color: orange;
 					padding: 3px 8px;	
-					text-align: center;		
+					text-align: center;
+
 					&:hover{
 						background-color: darkorange;
 					  .fa-info-circle{
