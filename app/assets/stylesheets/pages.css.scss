@@ -121,7 +121,12 @@ body{
 					background-color: orange;
 					padding: 3px 8px;	
 					text-align: center;		
-
+					&:hover{
+						background-color: darkorange;
+					  .fa-info-circle{
+					  	color: white;
+					  }
+					}
 				}
 			}
 		}
