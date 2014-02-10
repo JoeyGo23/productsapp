@@ -15,7 +15,7 @@ $(document).ready(function(){
         }
     });
 
-    $('.product-details').click(function() {
-        $(this).addClass('');
+    $("li").click(function() {
+       $(".show-details").toggleClass("show-details");
     });
 });
