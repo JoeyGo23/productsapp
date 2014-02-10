@@ -23,5 +23,11 @@ class PagesController < ApplicationController
       @product = Product.find(params[:id])
     end
 
+    def add_to_cart
+     
+      product = Product.find(params[:id])
+      @cart = find_cart
+      @current_item = @cart.add_product(product)
+    end
 
 end
