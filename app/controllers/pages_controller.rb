@@ -34,4 +34,5 @@ class PagesController < ApplicationController
       @line_items = LineItem.all
     end
 
+
 end
