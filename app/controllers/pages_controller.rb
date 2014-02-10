@@ -30,4 +30,8 @@ class PagesController < ApplicationController
       @current_item = @cart.add_product(product)
     end
 
+    def line_item
+      @line_items = LineItem.all
+    end
+
 end
