@@ -28,7 +28,7 @@
 </div>
 
 <div class="grid-container">
-	
+	<% cache ['pages', Product.latest] do %>
 	<% @products.each do |product| %>
 
 	  <div class="product-container" draggable="true" >
@@ -48,26 +48,26 @@
 
 	  	<div class="product-buttons">
 		  	<!-- Add to Cart Button -->
-			<ul>
-				<li class="add-to-cart">
+			
+				<%= button_to 'Add to Cart', line_items_path(product_id: product), :class => 'add-to-cart' %>
+			<!-- 	<span class="add-to-cart">
 					<a href=""> <i class="fa fa-plus"></i>   Add to Cart </a>
-				</li>	
+				</span>	 -->
 
 			  	<!-- Product Details -->
-				<li class="product-details">
+				<span class="product-details">
 					<a href=""> <i class="fa fa-info-circle"></i>   Product Details </a>
-				</li>
+				</span>
 
 				<!-- Show Product Details -->
-				<li class="show-details">
+				<span class="show-details">
 					<%= product.description %>
-				</li>
-			</ul>
+				</span>
 	  	</div>
 	  
 	  </div>
 	<% end %>
-	
+	<% end %>
 
 </div>
 
